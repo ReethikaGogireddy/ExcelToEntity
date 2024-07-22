@@ -12,9 +12,14 @@
   "devDependencies": {
     "@cap-js/sqlite": "^1",
     "@sap/eslint-plugin-cds": "^3",
+    "@sap/ux-specification": "^1.120.14",
     "eslint": "^9"
   },
   "scripts": {
-    "start": "cds-serve"
-  }
+    "start": "cds-serve",
+    "watch-excel_upload": "cds watch --open excel_upload/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/excel_upload"
+  ]
 }
