@@ -17,9 +17,13 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-excel_upload": "cds watch --open excel_upload/webapp/index.html?sap-ui-xx-viewCache=false"
+    "watch-excel_upload": "cds watch --open excel_upload/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-excelupload": "cds watch --open excelupload/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
-    "app/excel_upload"
+    "app/excel_upload",
+    "app/excelupload",
+    "app/excelupload",
+    "app/excelupload"
   ]
 }
