@@ -1,1 +1,0 @@
-using AstronomyThings as service from '../../srv/service';
