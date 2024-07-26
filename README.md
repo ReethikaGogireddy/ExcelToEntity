@@ -17,7 +17,12 @@ File or Folder | Purpose
 
 - Open a new terminal and run `cds watch`
 - (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+- Go to Planets folder by changing the directory.
+- Now, type npm start.
+- Click on go after the page opens.
+- Open any one of the records.
+- Click edit. Now, the SpreadSheet Upload button is enabled.Click on the button.
+- Browse the file that you want to upload.
 
 
 ## Learn More
