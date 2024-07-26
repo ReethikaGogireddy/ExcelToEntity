@@ -1,15 +1,15 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Tue Jul 23 2024 14:48:25 GMT+0530 (India Standard Time)|
+|**Generation Date and Time**<br>Fri Jul 26 2024 14:46:44 GMT+0530 (India Standard Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
-|**App Generator Version**<br>1.13.5|
+|**App Generator Version**<br>1.14.1|
 |**Generation Platform**<br>Visual Studio Code|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>OData Url|
 |**Service URL**<br>http://localhost:4004/odata/v4/astronomy-things
-|**Module Name**<br>excelupload|
-|**Application Title**<br>Excel Upload|
+|**Module Name**<br>planets|
+|**Application Title**<br>Planets|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.126.1|
@@ -17,8 +17,9 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>Planets|
+|**Navigation Entity**<br>Natural|
 
-## excelupload
+## planets
 
 An SAP Fiori application.
 

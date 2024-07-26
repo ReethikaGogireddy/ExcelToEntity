@@ -2,7 +2,7 @@
 
 specVersion: "3.1"
 metadata:
-  name: excelupload
+  name: planets
 type: application
 server:
   customMiddleware:
@@ -24,8 +24,15 @@ server:
         port: 35729
         path: webapp
         delay: 300
-    - name: fiori-tools-preview
-      afterMiddleware: fiori-tools-appreload
+    - name: sap-fe-mockserver
+      beforeMiddleware: csp
       configuration:
-        component: excelupload
-        ui5Theme: sap_horizon
+        mountPath: /
+        services:
+          - urlPath: /odata/v4/astronomy-things
+            metadataPath: ./webapp/localService/metadata.xml
+            mockdataPath: ./webapp/localService/data
+            generateMockData: true
+        annotations:
+          - localPath: ./webapp/annotations/annotation.xml
+            urlPath: annotations/annotation.xml

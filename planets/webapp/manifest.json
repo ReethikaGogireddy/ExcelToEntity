@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "excelupload",
+    "id": "planets",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
-      "version": "1.13.5",
-      "toolsId": "998c415e-c027-422a-9f75-75f4d295d517"
+      "version": "1.14.1",
+      "toolsId": "f680d443-66e7-4fd3-a64c-9ff37f784b92"
     },
     "dataSources": {
       "mainService": {
@@ -61,10 +61,7 @@
         "sap.ui.core": {},
         "sap.ushell": {},
         "sap.fe.templates": {}
-      },
-      "components": {
-    "cc.spreadsheetimporter.v0_26_1": {}
-  }
+      }
     },
     "contentDensities": {
       "compact": true,
@@ -74,7 +71,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "excelupload.i18n.i18n"
+          "bundleName": "planets.i18n.i18n"
         }
       },
       "": {
@@ -94,14 +91,6 @@
     "resources": {
       "css": []
     },
-    "componentUsages": {
-      "spreadsheetImporter": {
-        "name": "cc.spreadsheetimporter.v1_1_1"
-      }
-    },
-    "resourceRoots": {
-      "cc.spreadsheetimporter.v0_26_1": "./thirdparty/customControl/spreadsheetImporter/v1_26_1"
-    },
     "routing": {
       "config": {},
       "routes": [
@@ -114,6 +103,11 @@
           "pattern": "Planets({key}):?query:",
           "name": "PlanetsObjectPage",
           "target": "PlanetsObjectPage"
+        },
+        {
+          "pattern": "Planets({key})/Natural({key2}):?query:",
+          "name": "NaturalSatellitesObjectPage",
+          "target": "NaturalSatellitesObjectPage"
         }
       ],
       "targets": {
@@ -124,7 +118,6 @@
           "options": {
             "settings": {
               "contextPath": "/Planets",
-              "entitySet":"Planets",
               "variantManagement": "Page",
               "navigation": {
                 "Planets": {
@@ -151,7 +144,24 @@
             "settings": {
               "editableHeaderContent": false,
               "contextPath": "/Planets",
-              "entitySet":"Planets"
+              "navigation": {
+                "Natural": {
+                  "detail": {
+                    "route": "NaturalSatellitesObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "NaturalSatellitesObjectPage": {
+          "type": "Component",
+          "id": "NaturalSatellitesObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Planets/Natural"
             }
           }
         }
