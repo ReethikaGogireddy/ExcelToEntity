@@ -19,7 +19,7 @@ File or Folder | Purpose
 - (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
 - Go to Planets folder by changing the directory.
 - Now, type npm start.
-- Click on go after the page opens.
+- Click on 'Go' after the page opens.
 - Open any one of the records.
 - Click edit. Now, the SpreadSheet Upload button is enabled.Click on the button.
 - Browse the file that you want to upload.
