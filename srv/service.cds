@@ -4,6 +4,8 @@ service AstronomyThings {
     entity Planets as projection on db.Planets;
 }
 
+annotate AstronomyThings.Planets with @odata.draft.enabled;
+
 annotate AstronomyThings.Planets with @(
     UI.LineItem:[
         {

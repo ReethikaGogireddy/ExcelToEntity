@@ -144,10 +144,24 @@
             "settings": {
               "editableHeaderContent": false,
               "contextPath": "/Planets",
+              "entitySet": "Planets",
               "navigation": {
                 "Natural": {
                   "detail": {
                     "route": "NaturalSatellitesObjectPage"
+                  }
+                }
+              },
+              "content": {
+                "header": {
+                  "actions": {
+                    "spreadsheetUpload": {
+                      "id": "spreadsheetUploadButton",
+                      "text": "Spreadsheet Upload",
+                      "enabled": "{ui>/isEditable}",
+                      "press": "planets.ext.ObjectPageExtController.openSpreadsheetUploadDialog",
+                      "requiresSelection": false
+                    }
                   }
                 }
               }
@@ -165,6 +179,14 @@
             }
           }
         }
+      }
+    },
+    "resourceRoots": {
+      "cc.spreadsheetimporter.v1_1_1": "./thirdparty/customcontrol/spreadsheetimporter/v1_1_1"
+    },
+    "componentUsages": {
+      "spreadsheetImporter": {
+        "name": "cc.spreadsheetimporter.v1_1_1"
       }
     }
   },
